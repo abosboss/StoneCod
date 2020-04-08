@@ -11,6 +11,7 @@ function interestCalculator (array) {
         const newData = []
         array.forEach(item => {
             let rate;
+            for (arrays  in array) { 
             if (item.principal>=2500 && item.time >1 && item.time<3 ) {
                 rate = 3
 
@@ -34,14 +35,13 @@ function interestCalculator (array) {
                 let interestData = [array];
                 console.log(newtData);
 
-                return newData;
+                return newData; 
+            }
                 interestCalculator(data);
             }
     
-          })
-         return newData        
-}
-console.log(interestCalculator(array)) 
+          }      
+        } 
 </script>
 </body>
 </html>
